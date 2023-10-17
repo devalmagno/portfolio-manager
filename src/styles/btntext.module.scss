@@ -1,0 +1,19 @@
+@import './colors.module.scss';
+
+.btnText {
+    border: none;
+    background-color: $disabled;
+    padding: 4px 16px;
+    border-radius: 4px;
+
+    color: $enabled;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    &.selected {
+        background-color: $enabled;
+        color: $disabled;
+    }
+}
+

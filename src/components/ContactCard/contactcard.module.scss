@@ -1,0 +1,69 @@
+@import '../../styles/colors.module.scss';
+@import '../../styles/btnicon.module.scss';
+@import '../../styles/utils.module.scss';
+
+.container {
+    background-color: $card-bg;
+    padding: 16px 24px;
+    border-radius: 16px;
+    border: 1px solid $card-border;
+    box-shadow: $box-shadow;
+
+    max-width: 390px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    justify-content: space-between;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+
+        input {
+            border: none;
+            background: none;
+            color: $enabled;
+
+            &::placeholder {
+                color: $disabled;
+            }
+
+            &:read-only {
+                color: $enabled;
+            }
+        }
+    }
+
+    .orders {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+
+        span, b {
+            color: $enabled;
+        }
+
+        .lessBtn {
+            height: 18px;
+            width: 18px;
+            border-radius: 9px;
+            border: 1px solid $enabled;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: $enabled;
+            cursor: pointer;
+        }
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 18px;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../styles/break-point.scss';
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+
+    @include laptop {
+        padding: 0 36px;
+    }
+
+    nav {
+        display: flex;
+        column-gap: 16px;
+    }
+}

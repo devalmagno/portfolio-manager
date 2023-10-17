@@ -1,0 +1,25 @@
+$background: #06040C;
+$primary: #9AC445;
+$text: #E7E0F5;
+$disabled: #E5E5E5;
+$enabled: #333;
+$card-bg: #F4F6F7;
+$card-border: #D9D9D9;
+
+$section-title: #464646;
+
+$title: #4F4F4D;
+$title-darker: #333333;
+$subtitle: #50656E;
+
+$icon-background: $primary;
+$white-background: #fff;
+
+:export {
+    text: $text;
+    background: $background;
+    primary: $primary;
+    disabled: $disabled;
+    enabled: $enabled;
+    cardBg: $card-bg;
+}

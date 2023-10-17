@@ -1,0 +1,35 @@
+@import '../../styles/btnicon.module.scss';
+@import '../../styles/utils.module.scss';
+@import '../../styles/break-point.scss';
+@import '../../styles/colors.module.scss';
+
+.container {
+    background-color: $white-background;
+    border-radius: 12px;
+    box-shadow: $box-shadow;
+    padding: 7px 24px;
+
+    .inputField {
+        position: relative;
+        height: 40px;
+
+        input {
+            height: 100%;
+            border: 0;
+        }
+
+        hr {
+            color: $disabled;
+            background-color: $disabled;
+        }
+
+        .actions {
+            position: absolute;
+            top: 14px;
+            right: -4px;
+
+            display: flex;
+            column-gap: 24px;
+        }
+    }
+}
